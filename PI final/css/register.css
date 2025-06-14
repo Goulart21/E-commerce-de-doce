@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #F4eee2;
+    font-family: 'Arial', sans-serif;
+    color: #6e8041;
+    overflow-y: scroll;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .header-icons i {
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .header-icons i:hover {
+    color: #f08e35; /* Slight color change on hover */
+  }
+  
+  
+    /* Navbar */
+    .header {
+      background-color: #b35a00;
+      padding: 10px 0;
+      max-width: 100%;
+    }
+    
+    .header-brand img {
+      width: 100px;
+      height: 90px;
+    }
+    
+    .header a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+    }
+    
+    .header a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Icones */
+    header i {
+      cursor: pointer;
+      font-size: 30px;
+    }
+    
+    footer i {
+      cursor: pointer;
+      font-size: 30px;
+    }
+    
+    /* Links */
+    .links {
+      background-color: #d46a00;
+      padding: 10px 0;
+      text-align: center;
+    }
+    
+    .links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+    
+    .links a:hover {
+      text-decoration: underline;
+    }
+    /* Menu de Perfil */
+    .profile-menu {
+      display: none;
+      position: absolute;
+      top: 80px;
+      right: 50px;
+      background-color:white ;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      width: 200px;
+      z-index: 100;
+    }
+    
+    .profile-menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .profile-menu ul li {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .profile-menu ul li:last-child {
+      border-bottom: none;
+    }
+    .profile-icon{
+      background-color: #b35a00;
+      font-size: 30px;
+    }
+    
+    .profile-menu ul li a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .profile-menu ul li a:hover {
+      color: #b35a00;
+    }
+    
+    .profile-menu.show {
+      display: block;
+    }
+  
+ /* Register Form Specific Styles */
+main .container form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+main .container form h1 {
+    color: #b35a00;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+main .container form .form-label {
+    color: #6e8041;
+    font-weight: bold;
+}
+
+main .container form .form-control {
+    border-color: #d46a00;
+    transition: border-color 0.3s ease;
+}
+
+main .container form .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(179, 90, 0, 0.25);
+    border-color: #b35a00;
+}
+
+main .container form .btn-primary {
+    background-color: #b35a00;
+    border-color: #b35a00;
+    transition: all 0.3s ease;
+}
+
+main .container form .btn-primary:hover {
+    background-color: #d46a00;
+    border-color: #d46a00;
+}
+
+main .container .text-center a {
+    color: #b35a00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+main .container .text-center a:hover {
+    color: #d46a00;
+    text-decoration: underline;
+}
+    
+main{
+  flex: 1 0 auto;
+}
+ 
+  
+    footer {
+      background-color: #b35a00;
+      color: #fff;
+      padding: 5px 0;
+      text-align: center;
+     bottom: 0;
+      width: 100%;
+      font-size: 16px;
+      margin-top: auto;
+      clear: both;
+      position: fixed;
+    }
+    
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    .copyright {
+      margin-bottom: -10px;
+    }
+    
+    footer a:hover {
+      text-decoration: underline;
+      color: #6e8041;
+    }
+    
+    .footer .social-icons {
+      right: 20px;
+      display: block;
+      position: relative;
+    }
+    
+    .footer p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #fff;
+      font-family: sans-serif;
+    }
+       /* Accessibility Icon Styling */
+       .accessibility-icon {
+        cursor: pointer;
+        position: relative;
+        margin-right: 15px;
+    }
+    
+    .accessibility-icon i {
+        font-size: px;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    
+    .accessibility-icon:hover i {
+        color: #f08e35;
+        transform: scale(1.1) rotate(15deg);
+    }
+    
+    /* Estilos para o modal de acessibilidade */
+.accessibility-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000; /* Garante que fique sobre outros elementos */
+  display: none; /* Inicialmente oculto */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 90%;
+  width: 300px;
+  text-align: center;
+}
+
+.accessibility-modal.show {
+  display: block;
+}
+
+/* Fundo escuro semi-transparente quando modal está ativo */
+.accessibility-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+  display: none;
+}
+
+.accessibility-modal-overlay.show {
+  display: block;
+}
+    .accessibility-options {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .accessibility-options button {
+        background-color: #f08e35;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    
+    .accessibility-options button:hover {
+        background-color: #b35a00;
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .accessibility-options button:active {
+        transform: scale(0.95);
+    }
+    
+    /* Dark Mode Button Specific */
+    #toggle-dark-mode {
+        background-color: #333;
+    }
+    
+    #toggle-dark-mode:hover {
+        background-color: #555;
+    }
+    
+    /* High Contrast Button Specific */
+    #toggle-contrast {
+        background-color: #000;
+    }
+    
+    #toggle-contrast:hover {
+        background-color: #444;
+    }
+    
+    /* Reset Button Specific */
+    #reset-accessibility {
+        background-color: #6e8041;
+    }
+    
+    #reset-accessibility:hover {
+        background-color: #4a5a2b;
+    }
